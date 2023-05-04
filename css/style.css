@@ -133,6 +133,21 @@ body{
     text-decoration-line: underline;
 }
 
+@media (max-width: 576px){
+    #inicio-pagina section h4 {
+         font-size: 0.5em;
+     }
+ }
+
+ #inicio-pagina section p{
+    font-size: 20px;
+ }
+
+ @media (max-width: 576px){
+    #inicio-pagina section p {
+         font-size: 0.5em;
+     }
+ }
 
 .fotosinicio{
     width: 350px;
@@ -197,10 +212,16 @@ footer img{
     border-radius: 15px;
 } 
 
+
+@media (max-width: 1094px){
+    .botonevento {
+         font-size: 0.5em;
+     }
+ }
+
 .titulofoto {
     color: rgb(255, 255, 255);
     font-style: oblique;
     font-size: 20px;
 }
-
 
