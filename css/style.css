@@ -1,0 +1,206 @@
+* {
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header nav {
+    background-color: rgb(36, 8, 196);
+    padding: 40px 10px 80px 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+nav ul {
+    display: flex;
+}
+
+@media (max-width: 1092px){
+    nav ul {
+        display: flex;
+       flex-direction: column;
+    }
+}
+
+
+nav ul li:hover {
+    background-color: red;
+}
+
+.active{
+    background-color: red;
+}
+
+/*barra de inicio*/
+
+ nav ul li {
+    list-style: none;
+    background-color: black;
+    border: 3px solid white;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+
+/*texto de lista inicio y de footer*/
+ ul li a {
+    text-decoration: none;
+    color: rgb(51, 249, 252);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} 
+
+ h1 {
+    color: red;
+  } 
+
+ h2 {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: 32px;
+}
+
+ h3 {
+    color: red;
+}
+
+ h4 {
+    color: black;
+ }
+
+
+body{
+    background-color: black;
+    
+}
+
+#lugar-pagina section div{
+    display: flex;
+    margin: 10px;
+    background-color: brown;
+}
+
+#lugar-pagina section div span{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+#lugar-pagina h2{
+    text-align: center;
+    text-decoration: underline;
+    margin: 15px;
+}
+
+#lugar-pagina h3{
+    margin: 10px;
+}
+
+.evento {
+    background-color: white;
+    border: solid rgb(100, 66, 176);
+    color: black;   
+    display: flex;
+} 
+
+#evento-pagina section {
+    margin: 20px 10px 15px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#evento-pagina div div {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+#evento-pagina div p{
+    color: black;
+}
+
+#inicio-pagina section div{
+    margin: 15px 5px 25px 5px;
+}
+
+#inicio-pagina section h4{
+    color: rgb(235, 34, 34);
+    font-weight: 700;
+    text-decoration-line: underline;
+}
+
+
+.fotosinicio{
+    width: 350px;
+    height: 350px;
+}
+
+.fotosinicio:hover {filter: sepia(60%);}
+
+
+#galeria-pagina section{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: center;   
+}
+
+#galeria-pagina section img{
+    width: 350px;
+    height: 300px;
+    margin-top: 20px;
+}
+
+@media (max-width: 1094px){
+    #galeria-pagina section{
+        grid-template-columns: 50%;
+        justify-content: flex-start;
+    }
+}
+
+#galeria-pagina h2{
+    text-align: center;
+    text-decoration: underline;
+    margin: 3% 1% 3% 1%;
+}
+
+    
+footer {
+    background-color: rgb(36, 8, 196);
+}
+
+footer ul {
+    list-style: none;   
+  
+}
+
+footer ul li a{
+    display: flex;
+   align-items: center;
+}
+
+footer img{
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+
+}
+
+.botonevento { 
+    background-color: rgb(220, 23, 23);
+    color: white;
+    border: solid 2px white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 15px;
+} 
+
+.titulofoto {
+    color: rgb(255, 255, 255);
+    font-style: oblique;
+    font-size: 20px;
+}
+
+
