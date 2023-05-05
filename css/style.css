@@ -6,7 +6,7 @@
 
 header nav {
     background-color: rgb(36, 8, 196);
-    padding: 40px 10px 80px 10px;
+    padding: 40px 40px 80px 10px;
     margin-bottom: 20px;
     width: 100%;
     display: flex;
@@ -14,18 +14,22 @@ header nav {
     justify-content: space-between;
 }
 
+header{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
 
+main{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+/* navbar */
 nav ul {
     display: flex;
+    
 }
-
-@media (max-width: 1092px){
-    nav ul {
-        display: flex;
-       flex-direction: column;
-    }
-}
-
 
 nav ul li:hover {
     background-color: red;
@@ -43,8 +47,8 @@ nav ul li:hover {
     border: 3px solid white;
     border-radius: 10px;
     padding: 10px 10px 10px 10px;
+    margin-right: 20px;
 }
-
 
 /*texto de lista inicio y de footer*/
  ul li a {
@@ -52,6 +56,11 @@ nav ul li:hover {
     color: rgb(51, 249, 252);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 } 
+
+nav ul li a{
+    display: flex;
+    align-items: center;
+}
 
  h1 {
     color: red;
@@ -75,13 +84,19 @@ nav ul li:hover {
 
 body{
     background-color: black;
-    
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);   
 }
+
 
 #lugar-pagina section div{
     display: flex;
     margin: 10px;
     background-color: brown;
+    
 }
 
 #lugar-pagina section div span{
@@ -133,20 +148,8 @@ body{
     text-decoration-line: underline;
 }
 
-@media (max-width: 576px){
-    #inicio-pagina section h4 {
-         font-size: 0.5em;
-     }
- }
-
- #inicio-pagina section p{
+#inicio-pagina section p{
     font-size: 20px;
- }
-
- @media (max-width: 576px){
-    #inicio-pagina section p {
-         font-size: 0.5em;
-     }
  }
 
 .fotosinicio{
@@ -158,10 +161,10 @@ body{
 
 
 #galeria-pagina section{
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    justify-content: center;   
+    display: flex;
+    justify-content: space-evenly;
 }
+
 
 #galeria-pagina section img{
     width: 350px;
@@ -169,12 +172,6 @@ body{
     margin-top: 20px;
 }
 
-@media (max-width: 1094px){
-    #galeria-pagina section{
-        grid-template-columns: 50%;
-        justify-content: flex-start;
-    }
-}
 
 #galeria-pagina h2{
     text-align: center;
@@ -185,10 +182,17 @@ body{
     
 footer {
     background-color: rgb(36, 8, 196);
+    margin-top: 15px;
+    padding: 40px 40px 30px 10px;
+    width: 100%;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 
 footer ul {
     list-style: none;   
+    padding-left: 20px;
   
 }
 
@@ -212,6 +216,58 @@ footer img{
     border-radius: 15px;
 } 
 
+.titulofoto {
+    color: rgb(255, 255, 255);
+    font-style: oblique;
+    font-size: 20px;
+}
+
+/* galeria de fotos */
+@media (max-width: 1092px){
+.galeriafotos {
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 1092px){
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+}
+
+/* configuracion del body */
+@media (max-width: 1092px){
+    body {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2,auto);  
+    }
+}
+
+/* inicio pagina texto del evento */
+@media (max-width: 576px){
+    #inicio-pagina section h4 {
+         font-size: 0.5em;
+     }
+ }
+
+ @media (max-width: 576px){
+    #inicio-pagina section p {
+         font-size: 0.5em;
+     }
+ }
+
+ 
+@media (max-width: 1094px){
+    #galeria-pagina section{
+      flex-direction: column;
+    }
+}
 
 @media (max-width: 1094px){
     .botonevento {
@@ -219,9 +275,10 @@ footer img{
      }
  }
 
-.titulofoto {
-    color: rgb(255, 255, 255);
-    font-style: oblique;
-    font-size: 20px;
-}
-
+ /* logo de redbull del nav */
+ @media (max-width: 1094px){
+    nav img{
+        display: flex;
+        justify-content: center;
+    }
+ }
