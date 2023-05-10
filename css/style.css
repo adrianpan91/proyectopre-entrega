@@ -1,204 +1,34 @@
-* {
-    color: white;
-    margin: 0;
-    padding: 0;
+/* NAV BAR */
+.barra{
+    background-color: #213872;  
 }
 
-header nav {
-    background-color: rgb(36, 8, 196);
-    padding: 40px 40px 80px 10px;
-    margin-bottom: 20px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header{
-    display: grid;
-    grid-column-start: 1;
-    grid-column-end: 4;
-}
-
-main{
-    display: grid;
-    grid-column-start: 1;
-    grid-column-end: 4;
-}
-/* navbar */
 nav ul {
     display: flex;
-    
+    justify-content: center;
 }
 
-nav ul li:hover {
-    background-color: red;
+/* COLOR DE TEXTOS */
+
+.text-mio {
+    color: #fc1c58;
 }
 
-.active{
-    background-color: red;
+.activee {
+    color: rgb(255, 255, 255);
 }
 
-/*barra de inicio*/
-
- nav ul li {
-    list-style: none;
-    background-color: black;
-    border: 3px solid white;
-    border-radius: 10px;
-    padding: 10px 10px 10px 10px;
-    margin-right: 20px;
-}
-
-/*texto de lista inicio y de footer*/
- ul li a {
-    text-decoration: none;
-    color: rgb(51, 249, 252);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-} 
-
-nav ul li a{
-    display: flex;
-    align-items: center;
-}
-
- h1 {
-    color: red;
-  } 
-
- h2 {
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-style: italic;
-    font-size: 32px;
-}
-
- h3 {
-    color: red;
-}
-
- h4 {
-    color: black;
- }
-
-
-body{
-    background-color: black;
-    width: 100%;
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, auto);   
-}
-
-
-#lugar-pagina section div{
-    display: flex;
-    margin: 10px;
-    background-color: brown;
-    
-}
-
-#lugar-pagina section div span{
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-}
-
-#lugar-pagina h2{
-    text-align: center;
-    text-decoration: underline;
-    margin: 15px;
-}
-
-#lugar-pagina h3{
-    margin: 10px;
-}
-
-.evento {
-    background-color: white;
-    border: solid rgb(100, 66, 176);
-    color: black;   
-    display: flex;
-} 
-
-#evento-pagina section {
-    margin: 20px 10px 15px 10px;
-    display: flex;
-    flex-direction: column;
-}
-
-#evento-pagina div div {
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-
-}
-#evento-pagina div p{
-    color: black;
-}
-
-#inicio-pagina section div{
-    margin: 15px 5px 25px 5px;
-}
-
-#inicio-pagina section h4{
-    color: rgb(235, 34, 34);
-    font-weight: 700;
-    text-decoration-line: underline;
-}
-
-#inicio-pagina section p{
-    font-size: 20px;
- }
-
-.fotosinicio{
-    width: 350px;
-    height: 350px;
-}
-
-.fotosinicio:hover {filter: sepia(60%);}
-
-
-#galeria-pagina section{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-
-#galeria-pagina section img{
-    width: 350px;
-    height: 300px;
-    margin-top: 20px;
-}
-
-
-#galeria-pagina h2{
-    text-align: center;
-    text-decoration: underline;
-    margin: 3% 1% 3% 1%;
-}
-
-    
-footer {
-    background-color: rgb(36, 8, 196);
+/* FOOTER */
+footer{
+    background-color: #213872;
     margin-top: 15px;
-    padding: 40px 40px 30px 10px;
     width: 100%;
-    display: grid;
-    grid-column-start: 1;
-    grid-column-end: 4;
-}
-
-footer ul {
-    list-style: none;   
-    padding-left: 20px;
-  
-}
-
-footer ul li a{
     display: flex;
-   align-items: center;
+    justify-content: center;
+}
+
+footer ul{
+    list-style: none;
 }
 
 footer img{
@@ -208,77 +38,131 @@ footer img{
 
 }
 
-.botonevento { 
-    background-color: rgb(220, 23, 23);
-    color: white;
-    border: solid 2px white;
-    padding: 5px 10px 5px 10px;
-    border-radius: 15px;
+footer ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* COLOR DEL BODY */
+
+body{
+    background-color: #010101;
+    color: #e9bdbd;
+}
+
+/* TITULOS DE LAS PAGINAS */
+
+body h1{
+    display: flex;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 15px;
+}
+
+body h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 15px;
+}
+
+/* CARTAS INDEX */
+
+.cartasindex{
+    margin-top: 50px;
+    justify-content: space-evenly;
+}
+
+.bg-mio{
+    background-color:#72757e;
+    color: #fffffe;
+    border:3px solid #FACD34;
 } 
 
-.titulofoto {
-    color: rgb(255, 255, 255);
-    font-style: oblique;
-    font-size: 20px;
+
+
+/* BOTON DE LOS EVENTOS INDEX */
+
+.botonevento { 
+    border: 1px solid #ffffff; /*anchura, estilo y color borde*/
+    margin-top: 15px; /*margen del boton*/
+    padding: 10px; /*espacio alrededor texto*/
+    background-color: #CC1C4A; /*color botón*/
+    color: #ffffff; /*color texto*/
+    text-decoration: underline; /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
+    font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+    border-radius: 50px; /*bordes redondos*/  
+} 
+
+.botonesinicio{
+    display: flex;
+    justify-content: center;
 }
 
-/* galeria de fotos */
-@media (max-width: 1092px){
-.galeriafotos {
-        display: flex;
-        align-items: center;
+/* PAGINA DE INICIO */
+
+#inicio-pagina section div{
+    margin-top: 50px;
+}
+
+/* IMAGEN DEL CARRUSEL */
+.img-mia{
+    height: 650px;
+    display: flex;
+    justify-content: center;
+}
+
+/* IMAGEN DE LUGARES */
+
+section div img{
+    width: 350px;
+}
+
+/* CONTACTOS*/
+
+.contactos{
+    border: #ffffff;
+    color: #bdca08;
+}
+
+/* TABLA DE CONTACTOS */
+#contactos-pagina table{
+    display: flex;
+    justify-content: center;    
+}
+
+td , th  {
+    padding : 3px;
+    border-style : solid;
+    border-width : 2px;
+    border-color : #999999;
+  }
+
+#contactos-pagina section{         
+    display: flex;
+    justify-content: space-around;
+}
+
+/* IMAGEN DE EVENTO */
+
+.img-even{
+    width: 200px;
+    height: 200px;
+}
+
+/* CONTACTOS  */
+
+@media (max-width: 1000px){
+    #contactos-pagina section {
+            display: flex;
+            flex-direction: column-reverse;
+        }
     }
-}
 
+/* IMAGEN DEL CARRUSEL */
 
-@media (max-width: 1092px){
-    nav {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    @media (max-width: 1000px){
+        .img-mia{
+            height: 250px;    
+        }
+        }
         
-    }
-}
-
-/* configuracion del body */
-@media (max-width: 1092px){
-    body {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(2,auto);  
-    }
-}
-
-/* inicio pagina texto del evento */
-@media (max-width: 576px){
-    #inicio-pagina section h4 {
-         font-size: 0.5em;
-     }
- }
-
- @media (max-width: 576px){
-    #inicio-pagina section p {
-         font-size: 0.5em;
-     }
- }
-
- 
-@media (max-width: 1094px){
-    #galeria-pagina section{
-      flex-direction: column;
-    }
-}
-
-@media (max-width: 1094px){
-    .botonevento {
-         font-size: 0.5em;
-     }
- }
-
- /* logo de redbull del nav */
- @media (max-width: 1094px){
-    nav img{
-        display: flex;
-        justify-content: center;
-    }
- }
