@@ -1,199 +1,238 @@
-/* NAV BAR */
-.barra{
-    background-color: #213872;  
+#contactos-pagina table, .botonesinicio, .centradocarrusel, body h5, body h2, body h1, nav ul {
+  display: flex;
+  justify-content: center;
 }
 
-nav ul {
-    display: flex;
-    justify-content: center;
+#contactos-pagina section {
+  display: flex;
+  justify-content: space-around;
 }
 
-nav ul li{
-    border: #bdca08;
+footer {
+  display: flex;
+  justify-content: space-between;
 }
 
-/* COLOR DEL CLICK DEL MENU HAMBUR. */
-.btn-inico{
-    color: #fc1c58;
+.barra {
+  background-color: #213872;
 }
 
-/* COLOR DE TEXTOS */
+body {
+  color: #ffffff;
+  background: rgb(255, 0, 0);
+  background: linear-gradient(187deg, rgb(255, 0, 0) 0%, rgb(36, 29, 78) 39%, rgb(255, 0, 0) 100%);
+}
+body h1 {
+  font-family: Helvetica;
+  text-decoration: underline;
+  margin: 20px;
+}
+body h2 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 15px;
+}
+body h5 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #010101;
+}
+
+#inicio-pagina section div {
+  margin-top: 10px;
+}
+
+.btn-inico {
+  color: #fc1c58;
+}
 
 .text-mio {
-    color: #fc1c58;
-    font-weight: bold;
+  color: #fc1c58;
+  font-weight: bold;
 }
 
 .activee {
-    color: rgb(255, 255, 255);
+  color: #ffffff;
 }
 
-/* FOOTER */
-footer{
-    background-color: #213872;
-    margin-top: 15px;
-    width: 100%;
+.img-mia {
+  width: 800px;
+  height: 650px;
+}
+
+.cartasindex {
+  margin: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  justify-content: space-evenly;
+}
+
+.bg-mio {
+  background-color: #72757e;
+  color: #ffffff;
+  border: 3px solid #FACD34;
+}
+
+.card-index {
+  width: 20rem;
+  margin: 20px;
+}
+
+.botonevento {
+  border: 1px solid #ffffff;
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #CC1C4A;
+  color: #ffffff;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-family: "Helvetica", sans-serif;
+  border-radius: 50px;
+}
+
+.botonmenu {
+  color: #fc1c58;
+}
+
+.contactos {
+  border: #ffffff;
+  color: #eeff00;
+}
+
+td {
+  padding: 2px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #999999;
+}
+
+th {
+  padding: 2px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #999999;
+}
+
+.iframe-cont {
+  width: 400px;
+  height: 200px;
+}
+
+.imframe-div {
+  margin: 20px;
+}
+
+.img-even {
+  width: 200px;
+  height: 200px;
+}
+
+.event-mio {
+  width: 90%;
+  background-color: #999999;
+}
+
+.evento-card {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #eeff00;
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  background-color: #213872;
+  margin-top: 15px;
+  width: 100%;
+}
+footer ul {
+  list-style: none;
+}
+footer ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+footer img {
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+}
+
+#lugares-pagina section div img {
+  width: 350px;
+  height: 250px;
+}
+
+.lugares-mio {
+  width: 90%;
+  background-color: #999999;
+}
+
+.lugares-card {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.lugares-card p {
+  color: #ffffff;
+}
+
+.img-galeria {
+  width: 18rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.foto-galeriarap {
+  width: 260px;
+  height: 350px;
+}
+
+.foto-galeriaskate {
+  width: 260px;
+  height: 250px;
+}
+
+.iframe-gal {
+  width: 250px;
+  height: 315px;
+}
+
+.card-gal {
+  margin: 15px;
+}
+
+/* MEDIA QUERYS */
+@media (max-width: 1000px) {
+  #contactos-pagina section {
     display: flex;
-    justify-content: flex-start;
-}
-
-footer ul{
-    list-style: none;
-}
-
-footer img{
-    width: 25px;
-    height: 25px;
-    margin: 5px;
-
-}
-
-footer ul li a{
-    text-decoration: none;
-    color: #ffffff;
-}
-
-/* COLOR DEL BODY */
-
-body{
-    background-color: #010101;
-    color: #e9bdbd;
-}
-
-/* TITULOS DE LAS PAGINAS */
-
-body h1{
-    display: flex;
-    justify-content: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 15px;
-}
-
-body h2{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 15px;
-}
-
-/* CARTAS INDEX */
-
-.cartasindex{
-    margin: 20px;
-    justify-content: space-evenly;
-}
-
-.bg-mio{
-    background-color:#72757e;
-    color: #fffffe;
-    border:3px solid #FACD34;
-} 
-
-/* IMAGEN DE GALERIA */
-
-.img-galeria{
-    width: 18rem;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.foto-galeriarap{
-    width: 260px;
-    height: 350px;
-}
-
-.foto-galeriaskate{
-    width: 260px;
-    height: 250px;
-}
-
-/* BOTON DE LOS EVENTOS INDEX */
-
-.botonevento { 
-    border: 1px solid #ffffff; /*anchura, estilo y color borde*/
-    margin-top: 15px; /*margen del boton*/
-    padding: 10px; /*espacio alrededor texto*/
-    background-color: #CC1C4A; /*color botón*/
-    color: #ffffff; /*color texto*/
-    text-decoration: underline; /*decoración texto*/
-    text-transform: uppercase; /*capitalización texto*/
-    font-family: 'Helvetica', sans-serif; /*tipografía texto*/
-    border-radius: 50px; /*bordes redondos*/  
-} 
-
-.botonesinicio{
-    display: flex;
-    justify-content: center;
-}
-
-/* PAGINA DE INICIO */
-
-#inicio-pagina section div{
-    margin-top: 50px;
-}
-
-/* IMAGEN DEL CARRUSEL */
-.img-mia{
-    height: 650px;
-    display: flex;
-    justify-content: center;
-}
-
-/* IMAGEN DE LUGARES */
-
-section div img{
-    width: 350px;
-}
-
-/* CONTACTOS*/
-
-.contactos{
-    border: #ffffff;
-    color: #bdca08;
-}
-
-/* TABLA DE CONTACTOS */
-#contactos-pagina table{
-    display: flex;
-    justify-content: center;    
-}
-
-td , th  {
-    padding : 3px;
-    border-style : solid;
-    border-width : 2px;
-    border-color : #999999;
+    flex-direction: column-reverse;
   }
-
-#contactos-pagina section{         
+  .img-mia {
+    height: 250px;
+  }
+}
+@media (max-width: 927px) {
+  footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 927px) {
+  .cartasindex {
+    margin: 35px;
+  }
+}
+@media (max-width: 927px) {
+  .lugares-mio {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 927px) {
+  .iframe-cont {
+    width: 300px;
+    height: 150px;
+  }
+}
+@media (max-width: 927px) {
+  .evento-card {
+    display: flex;
+    justify-content: center;
+  }
 }
 
-/* IMAGEN DE EVENTO */
-
-.img-even{
-    width: 200px;
-    height: 200px;
-}
-
-/* CONTACTOS  */
-
-@media (max-width: 1000px){
-    #contactos-pagina section {
-            display: flex;
-            flex-direction: column-reverse;
-        }
-    }
-
-/* IMAGEN DEL CARRUSEL */
-
-    @media (max-width: 1000px){
-        .img-mia{
-            height: 250px;    
-        }
-        }
-
-    @media (max-width: 927px){
-        footer{
-            display: flex;
-             justify-content: center;
-            }
-        }
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,25 @@
+
+
+#lugares-pagina {
+	section {
+		div {
+			img {
+				width: 350px;
+				height: 250px;
+			}
+		}
+	}
+}
+
+.lugares-mio {
+	width: 90%;
+	background-color: $bg-color5;
+}
+
+.lugares-card {
+	font-family: $font-family_3;
+			p{
+			color: nth($colores, 3);
+	}
+}
+

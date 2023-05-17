@@ -1,0 +1,10 @@
+
+.barra {
+	background-color: $bg-color1;
+}
+nav {
+	ul {
+		@extend %flex-center;
+		
+	}
+}

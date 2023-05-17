@@ -1,0 +1,46 @@
+/* MEDIA QUERYS */
+@media (max-width: 1000px) {
+	#contactos-pagina {
+		section {
+			display: flex;
+			flex-direction: column-reverse;
+		}
+	}
+	.img-mia {
+		height: 250px;
+	}
+}
+@media (max-width: 927px) {
+	footer {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+@media (max-width: 927px) {
+	.cartasindex {
+		margin: 35px;
+	}
+}
+
+@media (max-width: 927px){
+	.lugares-mio {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+@media (max-width:927px) {
+	.iframe-cont{
+		width: 300px;
+		height: 150px;
+	}
+}
+
+@media (max-width: 927px){
+	.evento-card  {
+		display: flex;
+		justify-content: center;
+	}
+}
+

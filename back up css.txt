@@ -1,0 +1,225 @@
+/* NAV BAR */
+.barra{
+    background-color: #213872;  
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    border: #bdca08;
+}
+
+/* COLOR DEL BODY */
+
+body{
+    background-color: #010101;
+    color: #e9bdbd;
+}
+
+/* COLOR DEL CLICK DEL MENU HAMBUR. */
+.btn-inico{
+    color: #fc1c58;
+}
+
+/* COLOR DE TEXTOS */
+
+.text-mio {
+    color: #fc1c58;
+    font-weight: bold;
+}
+
+.activee {
+    color: rgb(255, 255, 255);
+}
+
+/* FOOTER */
+footer{
+    background-color: #213872;
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer img{
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* TITULOS DE LAS PAGINAS */
+
+body h1{
+    display: flex;
+    justify-content: center;
+    font-family: Helvetica;
+    text-decoration: underline;
+    margin: 20px;
+}
+
+body h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 15px;
+}
+
+
+/* CARTAS INDEX */
+
+.cartasindex{
+    margin: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: space-evenly;
+}
+
+.bg-mio{
+    background-color:#72757e;
+    color: #fffffe;
+    border:3px solid #FACD34;
+}
+
+/* TAMAÑO DE CARTAS INDEX */
+
+.img-index{
+    width: 20rem;
+}
+
+/* BOTON DE LOS EVENTOS INDEX */
+
+.botonevento { 
+    border: 1px solid #ffffff; /*anchura, estilo y color borde*/
+    margin-top: 15px; /*margen del boton*/
+    padding: 10px; /*espacio alrededor texto*/
+    background-color: #CC1C4A; /*color botón*/
+    color: #ffffff; /*color texto*/
+    text-decoration: underline; /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
+    font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+    border-radius: 50px; /*bordes redondos*/  
+} 
+
+.botonesinicio{
+    display: flex;
+    justify-content: center;
+}
+
+/* PAGINA DE INICIO */
+
+#inicio-pagina section div{
+    margin-top: 50px;
+}
+
+/* IMAGEN DEL CARRUSEL */
+.img-mia{
+    width: 800px;
+    height: 650px;
+}
+
+.centradocarrusel{
+    display: flex;
+    justify-content: center;
+}
+
+/* IMAGEN DE GALERIA */
+
+.img-galeria{
+    width: 18rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.foto-galeriarap{
+    width: 260px;
+    height: 350px;
+}
+
+.foto-galeriaskate{
+    width: 260px;
+    height: 250px;
+}
+
+
+/* IMAGEN DE LUGARES */
+
+#lugares-pagina section div img{
+    width: 350px;
+    height: 250px;
+}
+
+/* CONTACTOS*/
+
+.contactos{
+    border: #ffffff;
+    color: #bdca08;
+}
+
+/* TABLA DE CONTACTOS */
+#contactos-pagina table{
+    display: flex;
+    justify-content: center;    
+}
+
+td , th  {
+    padding : 3px;
+    border-style : solid;
+    border-width : 2px;
+    border-color : #999999;
+  }
+
+#contactos-pagina section{         
+    display: flex;
+    justify-content: space-around;
+}
+
+/* IMAGEN DE EVENTO */
+
+.img-even{
+    width: 200px;
+    height: 200px;
+}
+
+.event-mio{
+    width: 1000px;
+    background-color: #999999;
+}
+
+.evento-card{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+
+/* CONTACTOS MOBIL */
+
+@media (max-width: 1000px){
+    #contactos-pagina section {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+
+/* IMAGEN DEL CARRUSEL MOBIL*/
+
+    @media (max-width: 1000px){
+        .img-mia{
+            height: 250px;    
+        }
+        }
+
+    @media (max-width: 927px){
+        footer{
+            display: flex;
+             justify-content: center;
+            }
+        }

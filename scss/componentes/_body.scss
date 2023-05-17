@@ -1,0 +1,84 @@
+
+	body {
+		color: nth($colores, 3);
+		background: rgb(255,0,0);
+		background: linear-gradient(187deg, rgba(255,0,0,1) 0%, rgba(36,29,78,1) 39%, rgba(255,0,0,1) 100%);
+		h1 {
+			@extend %flex-center;
+			font-family: $font-family_1;
+			text-decoration: map-get($body, Deco);
+			margin: 20px;
+		}
+		h2 {
+			@extend %flex-center;
+			font-family: $font-family_2;
+			margin: 15px;
+		}
+		h5{
+			font-family: $font-family_2;
+			@extend %flex-center;
+			color: nth($colores, 5);
+		}
+	}
+
+	#inicio-pagina {
+		section {
+			div {
+				margin-top: 10px;
+			}
+		}
+	}
+
+
+	.btn-inico {
+		color: nth($colores, 2);
+	}
+	.text-mio {
+		color: nth($colores, 2);
+		font-weight: bold;
+	}
+	.activee {
+		color: nth($colores, 3);
+	}
+	// imagen del carrusel
+	.img-mia {
+		width: 800px;
+		height: 650px;
+	}
+	.centradocarrusel {
+		@extend %flex-center;
+	}
+
+	.cartasindex {
+		margin: 20px;
+		font-family: $font-family_3;
+		justify-content: space-evenly;
+	}
+
+	.bg-mio {
+		background-color: $bg-color3;
+		color: nth($colores, 3);
+		border: 3px solid #FACD34;
+	}
+	.card-index {
+		width: 20rem;
+		margin: 20px;
+	}
+	.botonevento {
+		border: 1px solid #ffffff;
+		margin-top: 15px;
+		padding: 10px;
+		background-color: $bg-color4;
+		color: nth($colores, 3);
+		text-decoration: underline;
+		text-transform: uppercase;
+		font-family: $font-family_4;
+		border-radius: 50px;
+	}
+	.botonesinicio {
+		@extend %flex-center;
+	}
+
+	.botonmenu{
+		color: nth($colores , 2)
+	}

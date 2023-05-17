@@ -1,0 +1,21 @@
+
+footer {
+	background-color: $bg-color1;
+	margin-top: map-get( $footer , mar-top);
+	width: 100%;
+	@extend %flex-between;
+	ul {
+		list-style: none;
+		li {
+			a {
+				text-decoration: none;
+				color: nth($colores, 3);
+			}
+		}
+	}
+	img {
+		width: 25px;
+		height: 25px;
+		margin: 5px;
+	}
+}
