@@ -5,31 +5,54 @@
 	color: nth($colores, 4);
 }
 #contactos-pagina {
-	table {
-		@extend %flex-center;
-	}
+		table {
+			@extend %flex-center;
+		}
+	
 	section {
 		@extend %flex-around;
+		form{
+			div{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+		}
 	}
 }
-td {
-	padding: 2px;
-	border-style: solid;
-	border-width: 1px;
-	border-color: $border-color1;
-}
-th {
-	padding: 2px;
-	border-style: solid;
-	border-width: 1px;
-	border-color: $border-color1;
-}
-
+			
+			td {
+				padding: 4px;
+				border-style: solid;
+				border-width: 1px;
+				border-color: $border-color1;
+			}
+			th {
+				padding: 4px;
+				border-style: solid;
+				border-width: 4px;
+				border-color: $border-color1;
+			}
+.tabla{
+	
+}	
+	
 .iframe-cont{
 	width: 400px;
 	height: 200px;
 }
 
 .imframe-div{
-	margin: 20px;
+	margin-top: 20px;
+	width: 100%;
+    display:flex; 
+	flex-direction: column;
+	align-items: center;
+}
+
+.cont{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
 }

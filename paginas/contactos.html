@@ -14,75 +14,85 @@
     <title>Contactos | Redbull</title>
 </head>
 <body id="contactos-pagina">
-    <!-- INICIO NAVBAR -->
-    <nav class="navbar navbar-expand-lg barra">
-      <div class="container-fluid">
-          <img class="logo" src="../imagenes/redbullcom-logo.svg" alt="REDBULL LOGO">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-              <ul class="navbar-nav">
-                  <li class="nav-item">
-                      <a class="nav-link text-mio" aria-current="page" href="../index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link text-mio" href="./lugares.html">Lugares</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link text-mio" href="./galeria.html">Galeria</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link text-mio" href="./eventos.html">Eventos</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link text-mio activee" href="#">Contatos</a>
-                  </li>
-              </ul>
-          </div>
-      </div>
-    </nav>
-    <!-- FIN NAVBAR -->
-
-    <!-- TABLA CONTANTOS -->       
-    <h1 data-aos="flip-left"
-    data-aos-easing="ease-out-cubic"
-    data-aos-duration="2000">Contactos</h1>
+    <header>
+        <!-- INICIO NAVBAR -->
+        <nav class="navbar navbar-expand-lg barra">
+        <div class="container-fluid">
+            <img class="logo" src="../imagenes/redbullcom-logo.svg" alt="REDBULL LOGO">
+            <button class="navbar-toggler btn-inico" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-mio" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-mio" href="./lugares.html">Lugares</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-mio" href="./galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-mio" href="./eventos.html">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-mio activee" href="#">Contactos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </nav>
+        <!-- FIN NAVBAR -->
+    </header>
+    
     <main>
-        <table>
-            <tr>
-                <th>CONTACTOS</th>
-                <th>SECTOR</th>
-                <th>TELEFONO</th>
-                <th>HORARIOS</th>
-            </tr>
+        <!-- TABLA CONTANTOS -->       
+        <h1 data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">Contactos</h1>
+                <table class="tabla">
+                    <tr>
+                        <th>CONTACTOS</th>
+                        <th>SECTOR</th>
+                        <th>TELEFONO</th>
+                        <th>HORARIOS</th>
+                    </tr>
 
-            <tr>
-                <td>SANTIAGO</td>
-                <td>COBRANZAS</td>
-                <td>1234567</td>
-                <td>9:00hs a 18:00hs</td>
-            </tr>
+                    <tr>
+                        <td>SANTIAGO</td>
+                        <td>COBRANZAS</td>
+                        <td>1234567</td>
+                        <td>9:00hs a 18:00hs</td>
+                    </tr>
 
-            <tr>
-                <td>ROMINA</td>
-                <td>EVENTOS</td>
-                <td>1547896</td>
-                <td>9:00hs a 15:00hs</td>
-            </tr>
-        </table>
-        
+                    <tr>
+                        <td>ROMINA</td>
+                        <td>EVENTOS</td>
+                        <td>1547896</td>
+                        <td>9:00hs a 15:00hs</td>
+                    </tr>
+                </table>
+           
         <section class="container-fluid">
             <div class="row"> 
                 <!-- FORMULARIO -->
-                <form>
+                <form class="cont">
                     <h2>Envianos tu consulta a traves del formulario</h2>
                     <div class="mb-4, col-6">
                         <label for="exampleFormControlInput1" class="form-label">Direccion de email</label>
                         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@ejemplo.com">
                     </div>
-                    <div class="mb-3 col-8">
+                    <div class="mb-4, col-6">
+                        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre...">
+                    </div>
+                    <div class="mb-4, col-6">
+                        <label for="exampleFormControlInput1" class="form-label">Apellido</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Apellido...">
+                    </div>
+                    <div class="mb-3 col-6">
                         <label for="exampleFormControlTextarea1" class="form-label">Tu consulta</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
                     </div>

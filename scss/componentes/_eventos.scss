@@ -1,5 +1,9 @@
 // EVENTOS
-
+#evento-pagina{
+	p{
+		margin: 16px;
+	}
+}
 .img-even {
 	width: 200px;
 	height: 200px;
@@ -7,10 +11,17 @@
 .event-mio {
 	width: 90%;
 	background-color: $bg-color5;
+	
 }
 .evento-card {
 	font-family: $font-family_3;
 	color: nth($colores, 4);
 	display: flex;
+	align-items: center;
+}
+
+.event-cent {
+	display: flex;
+	flex-direction: column;
 	align-items: center;
 }
